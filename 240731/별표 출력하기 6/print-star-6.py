@@ -13,7 +13,7 @@ for i in range(n):
 
 # 아랫부분
 for i in range(n - 1):
-    for j in range(2 - i):
+    for j in range(n - 2 - i):
         print(" ", end = ' ')
     for j in range(3 + (2 * i)):
         print("*", end = ' ')
