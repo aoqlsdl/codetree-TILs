@@ -4,6 +4,8 @@ new_arr = []
 for a in arr:
     if a != 0:
         new_arr.append(a)
+    else:
+        break
 
 for n in new_arr:
     if n % 2 == 0:
