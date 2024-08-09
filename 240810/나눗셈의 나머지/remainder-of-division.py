@@ -1,5 +1,5 @@
 a, b = map(int, input().split())
-arr = [0] * 11
+arr = [0] * (b - 1)
 hap = 0
 exchange = 0
 
