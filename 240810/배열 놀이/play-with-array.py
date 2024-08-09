@@ -8,7 +8,7 @@ for i in range(q):
         print(elem[ask[1] - 1])
     elif ask[0] == 2:
         if ask[1] in elem:
-            print(elem.index(ask[i]) + 1)
+            print(elem.index(ask[1]) + 1)
         else:
             print(0)
     elif ask[0] == 3:
