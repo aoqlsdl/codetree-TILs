@@ -4,21 +4,11 @@ word_1 = input()
 word_2 = input()
 word_3 = input()
 
-max_length = 0
-min_length = 0
+len1 = len(str1)
+len2 = len(str2)
+len3 = len(str3)
 
-if (len(word_1) > len(word_2) and len(word_1) > len(word_3)):
-    max_length = len(word_1)
-elif (len(word_2) > len(word_1) and len(word_2) > len(word_3)):
-    max_length = len(word_2)
-else:
-    max_length = len(word_3)
+mx = max([len1, len2, len3])
+mn = min([len1, len2, len3])
 
-if (len(word_1) < len(word_2) and len(word_1) < len(word_3)):
-    min_length = len(word_1)
-elif (len(word_2) < len(word_1) and len(word_2) < len(word_3)):
-    min_length = len(word_2)
-else:
-    min_length = len(word_3)
-
-print(max_length - min_length)
+print(mx - mn)
