@@ -1,8 +1,6 @@
-import sys
-
-word_1 = input()
-word_2 = input()
-word_3 = input()
+str1 = input()
+str2 = input()
+str3 = input()
 
 len1 = len(str1)
 len2 = len(str2)
