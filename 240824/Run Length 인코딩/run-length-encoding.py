@@ -15,7 +15,7 @@ else:
             cnt = 1
         
         if i == len(A) - 1:
-            rle += A[i - 1]
+            rle += A[i]
             rle += str(cnt)
 
 print(len(rle))
