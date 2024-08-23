@@ -11,7 +11,7 @@ for i in range(len(A) - 1):
         cnt = 1
     
     if i == len(A) - 2:
-        rle += A[i]
+        rle += A[i + 1]
         rle += str(cnt)
 
 print(len(rle))
