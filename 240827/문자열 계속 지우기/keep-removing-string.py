@@ -1,12 +1,21 @@
-a=input()
-b=input()
-arr=list(a)
-
+A = input()
+B = input()
+lenA = len(A)
+lenB = len(B)
 while True:
-    idx=''.join(arr).index(b) # b 가 a 에 포함된 최초의 위치 
-    arr=arr[:idx] + arr[idx + 1:] # slicing 
-    if b not in ''.join(arr): # 있을 떄까지 반복 
-        print(''.join(arr))
+    idx = -1
+
+    candidates = lenA - lenB +1
+    for i in range(candidates):
+        is_same = True
+        for j in range(lenB):
+            if  A[i+j] != B[j]:
+                is_same = False
+                break
+        if is_same:
+            idx = i
+    if  idx == -1:
         break
-    else:
-        continue
+    A= A[:idx]+A[idx+lenB:]
+    lenA = len(A)
+print(A)
