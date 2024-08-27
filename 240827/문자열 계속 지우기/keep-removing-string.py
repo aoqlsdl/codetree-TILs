@@ -1,25 +1,12 @@
-A = input()
-B = input()
+a=input()
+b=input()
+arr=list(a)
 
-while B in A:
-    idx = A.find(B)
-    A = A[:idx] + A[idx + 2:]
-print(A)
-
-# while True:
-# for i in range(len(A)):
-#     print(f"i: {i}, i + 2: {i + 2}")
-#     print(f"i: {A[i:i + 2]}")
-#     if A[i:i + 2] == B:
-#         A = list(A)
-#         A.pop(i)
-#         A.pop(i + 1)
-#         A = ''.join(A)
-#     else:
-#         print("False")
-
-# print(A)
-
-
-# # A = ''.join(A)
-# # print(A)
+while True:
+    idx=''.join(arr).index(b) # b 가 a 에 포함된 최초의 위치 
+    arr=arr[:idx] + arr[idx + 1:] # slicing 
+    if b not in ''.join(arr): # 있을 떄까지 반복 
+        print(''.join(arr))
+        break
+    else:
+        continue
